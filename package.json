@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@google/genai": "^2.8.0",
+    "axios": "^1.16.1",
+    "base-64": "^1.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0",
+    "nodejs": "^0.0.0",
+    "openai": "^6.39.1",
+    "passport-google-oauth20": "^2.0.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router": "^8.3.0",
+    "react-router-dom": "^7.11.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.4",
+    "vite": "^8.1.5"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
