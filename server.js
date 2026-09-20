@@ -17,7 +17,8 @@ const allowedOrigins = [
   'http://localhost:5174', 
   'http://localhost:3000', 
   'http://localhost:3001',
-  'http://localhost:3002'
+  'http://localhost:3002',
+   'http://amazonaws.com'
 ];
 
 const corsOptions = {
@@ -79,7 +80,7 @@ app.post("/ask-ai", async (req, res) => {
       contents: message,
       // Force structural discipline so the UI always renders elegantly
       config: {
-        systemInstruction: `You are Vitalis Assist, a premium, supportive reproductive health AI. 
+        systemInstruction: `You are a womens health Assist, a premium, supportive reproductive health AI. 
         Keep responses highly structured, bite-sized, and professional. 
         Always use clean markdown headers, bullet points, and brief fragments instead of walls of text. 
         If medical symptoms or remedies are discussed, non-judgmentally mention 3 distinct potential causes or options and advise checking with a professional.`
@@ -437,7 +438,7 @@ app.get("/api/bookings/dashboard", authenticateBase64, async (req, res) => {
   }
 });
 
-
+// stopped
 
 app.post("/api/doctors/review", authenticateBase64, async (req, res) => {
   try {
