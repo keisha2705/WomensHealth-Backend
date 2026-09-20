@@ -8,7 +8,7 @@ const cors = require("cors");
 const { GoogleGenAI } = require("@google/genai");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
 const uri = process.env.MONGODB_URI;
 
 
